@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/updateid"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Task Name"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FF000000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/taskname_update"
+        android:hint="Add your task name.." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Target Date"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF000000"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/completion_update"
+        android:hint="Pick a date.."
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Priority"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF000000"/>
+
+    <Spinner
+        android:id="@+id/priority_update"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="30dp"
+        android:entries="@array/priority_arrays"
+        android:prompt="@string/priority_level">
+    </Spinner>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/status_update"
+        android:visibility="invisible"/>
+    <CheckBox
+        android:id="@+id/notcompleted"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="30dp"
+        android:text="Not Completed" />
+    <CheckBox
+        android:id="@+id/completed"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="200dp"
+        android:text="Completed"/>
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

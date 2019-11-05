@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="action_settings">Clear all tasks</string>
+    <string name="priority_level">Choose a priority of task</string>
+
+    <string-array name="priority_arrays">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+</resources>

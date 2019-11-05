@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Task Details"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Task Name"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Date Of Completion"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Priority Level"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Status"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/colorAccent"
+        android:text="Edit"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/display_taskname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/display_taskdoc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/display_taskpriority"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/display_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:text=" Ok "
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

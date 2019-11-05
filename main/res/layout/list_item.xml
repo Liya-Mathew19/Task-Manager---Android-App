@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/done"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/ic_done"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/edit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/ic_edit"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/task"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/taskid"
+        android:layout_marginLeft="300dp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/curdate" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/dateofcompletion"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:id="@+id/priority"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:id="@+id/tskstatus"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="#000000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Pending Task List"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="From Date"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/fromdate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="30dp"
+        android:hint="Pick a Date.."
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="To Date"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/todate"
+        android:hint="Pick a date..."
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/applyfilter"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:text="Apply Filter"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/todate"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pendinglistview"></ListView>
+    </RelativeLayout>
+</LinearLayout>
